@@ -1,0 +1,238 @@
+/* 🌟 General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e6f0ff;
+  color: #333;
+  text-align: center;
+  padding-top: 80px; /* space for fixed navbar */
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #0d47a1; /* dark blue header */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap; /* allows wrapping if space is small */
+}
+
+.navbar h1.logo {
+  font-size: 1.8rem;
+  white-space: nowrap; /* keeps QuizLearn on one line */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffca28; /* nice soft yellow hover */
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+
+/* 🌟 Home Section */
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('images/bagger.jpg') center/cover no-repeat;
+  color: white;
+  padding: 40px 20px;
+}
+
+.home h2 span {
+  color: #0d47a1;
+}
+
+/* 🌟 Subject Cards */
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #0d47a1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(13, 71, 161, 0.3);
+}
+
+/* 🌟 Footer */
+footer {
+  background-color: #0d47a1;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-top: 3px solid #1565c0;
+  margin-top: 40px;
+}
+
+/* 🌟 About, Contact, and Admin Pages */
+.about-page,
+.contact-page,
+.admin-page {
+  background: linear-gradient(180deg, #ffffff 0%, #e6f0ff 100%);
+  padding: 80px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-page h2,
+.contact-page h2,
+.admin-page h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.about-page p,
+.contact-page p,
+.admin-page p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 🌟 Contact Form (Vertical Layout) */
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-page input,
+.contact-page textarea {
+  padding: 12px;
+  border: 2px solid #b0c4ff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-page button {
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-page button:hover {
+  background-color: #1565c0;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 600px) {
+  .subjects {
+    grid-template-columns: 1fr;
+  }
+}
+/* Fix for Navbar Logo visibility */
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Admin Box Form Layout */
+.admin-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+  text-align: left;
+}
+
+.admin-box label {
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
+.admin-box input,
+.admin-box textarea {
+  padding: 10px;
+  border: 2px solid #b0c4ff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.admin-box button {
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.admin-box button:hover {
+  background-color: #1565c0;
+}
+
+
+
+
+
+
+
+
+

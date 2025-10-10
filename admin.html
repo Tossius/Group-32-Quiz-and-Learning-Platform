@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - QuizLearn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">QuizLearn</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html" class="active">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Admin Section -->
+  <section class="admin-page">
+    <h2>Admin Panel</h2>
+    <p>Manage your quiz questions easily — add or remove any topic below.</p>
+
+    <div class="admin-box">
+      <form>
+        <div class="form-group">
+          <label>Question:</label>
+          <input type="text" placeholder="Enter Question" required>
+        </div>
+
+        <div class="form-group">
+          <label>Correct Answer:</label>
+          <input type="text" placeholder="Enter Correct Answer" required>
+        </div>
+
+        <div class="form-group">
+          <label>Options:</label>
+          <textarea rows="3" placeholder="Enter Options (comma separated)"></textarea>
+        </div>
+
+        <button type="submit">Add Question</button>
+        <button type="button" style="margin-top:15px; background:#b71c1c;">Remove Question</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 QuizLearn | Designed by Juliette</p>
+  </footer>
+</body>
+</html>
+
+
+
