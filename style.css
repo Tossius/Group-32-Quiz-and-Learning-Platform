@@ -69,7 +69,7 @@ body {
   color: #0d47a1;
 }
 
-/* 🌟 Subject Cards */
+/*Subject Cards */
 .subjects {
   display: grid;
   grid-template-columns: repeat(2, 250px);
@@ -189,7 +189,7 @@ footer {
 }
 
 /* Admin Box Form Layout */
-.admin-box form {
+.quiz-creator-box form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -197,14 +197,14 @@ footer {
   text-align: left;
 }
 
-.admin-box label {
+.quiz-creator-box label {
   font-weight: 600;
   color: #0d47a1;
   margin-bottom: 5px;
 }
 
-.admin-box input,
-.admin-box textarea {
+.quiz-creator-box input,
+.quiz-creator-box textarea {
   padding: 10px;
   border: 2px solid #b0c4ff;
   border-radius: 8px;
@@ -213,7 +213,7 @@ footer {
   width: 100%;
 }
 
-.admin-box button {
+.quiz-creator-box button {
   background-color: #0d47a1;
   color: white;
   padding: 12px;
@@ -224,7 +224,7 @@ footer {
   transition: 0.3s;
 }
 
-.admin-box button:hover {
+.quiz-creator-box button:hover {
   background-color: #1565c0;
 }
 

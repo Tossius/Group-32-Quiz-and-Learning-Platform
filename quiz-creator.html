@@ -13,8 +13,8 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="admin.html" class="active">Admin</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="quiz-creator.html">Quiz Creator</a></li>
     </ul>
   </nav>
 
@@ -23,8 +23,13 @@
     <h2>Admin Panel</h2>
     <p>Manage your quiz questions easily — add or remove any topic below.</p>
 
-    <div class="admin-box">
+    <div class="quiz-creator-box">
       <form>
+        <div class="form-group">
+          <label>Subject:</label>
+          <input type="text" placeholder="Enter Subject code" required>
+        </div>
+
         <div class="form-group">
           <label>Question:</label>
           <input type="text" placeholder="Enter Question" required>
@@ -36,9 +41,21 @@
         </div>
 
         <div class="form-group">
-          <label>Options:</label>
-          <textarea rows="3" placeholder="Enter Options (comma separated)"></textarea>
+          <label>Option 1:</label>
+          <input type="text" placeholder="Enter Option 1" required>
         </div>
+
+        <div class="form-group">
+          <label>Option 2:</label>
+          <input type="text" placeholder="Enter Option 2" required>
+        </div>
+
+        <div class="form-group">
+          <label>Option 3:</label>
+          <input type="text" placeholder="Enter Option 3" required>
+        </div>
+
+
 
         <button type="submit">Add Question</button>
         <button type="button" style="margin-top:15px; background:#b71c1c;">Remove Question</button>
